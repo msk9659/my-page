@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
+<html lang="ko"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>혜린의 신비로운 바닷속 공간 🌊</title>
@@ -9,7 +8,7 @@
   <!-- Canvas Confetti CDN (축하 폭죽 효과) -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <!-- Google Fonts: Jua & Noto Sans KR -->
-  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jua&amp;family=Noto+Sans+KR:wght@400;700;900&amp;display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -154,7 +153,100 @@
       }
     }
   </style>
-</head>
+<style data-studio="css">
+:root{--st-accent:#e2557a}
+.st-nav{position:sticky;top:0;z-index:50;width:100%;box-sizing:border-box;background:#fff;background:rgba(255,255,255,.93);backdrop-filter:blur(6px);border-bottom:1px solid rgba(0,0,0,.08)}
+.st-nav-in{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:10px 12px;max-width:960px;margin:0 auto}
+.st-nav-a{display:inline-block;padding:8px 14px;border-radius:999px;text-decoration:none;color:#333;font-weight:700;font-size:15px;line-height:1.2}
+.st-nav-a:hover{background:rgba(0,0,0,.06)}
+.st-nav-a.is-on{background:var(--st-accent);color:#fff}
+.st-sec{box-sizing:border-box;width:100%;max-width:960px;margin:24px auto;padding:20px}
+.st-h{font-size:1.6rem;font-weight:800;line-height:1.3;margin:0 0 12px}
+.st-p{font-size:1rem;line-height:1.75;margin:0 0 12px}
+.st-btn{display:inline-block;padding:12px 22px;border-radius:12px;background:var(--st-accent);color:#fff!important;text-decoration:none;font-weight:700;font-size:1rem;line-height:1.2;border:0;cursor:pointer;margin:4px}
+.st-btn:hover{filter:brightness(1.08)}
+.st-img{margin:16px auto;text-align:center}
+.st-img img{display:inline-block;width:100%;max-width:100%;height:auto;border-radius:12px}
+.st-hero{text-align:center;padding:48px 20px;border-radius:20px;background:#f6f6f6;background:color-mix(in srgb,var(--st-accent) 12%,#fff)}
+.st-hero .st-h{font-size:2rem}
+.st-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.st-card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,.05);text-align:left}
+.st-ico{font-size:2rem;line-height:1;margin:0 0 8px}
+.st-card .st-h{font-size:1.15rem;margin:0 0 6px}
+.st-card .st-p{margin:0;font-size:.95rem}
+.st-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:20px;align-items:center}
+@media(max-width:600px){.st-split{grid-template-columns:1fr}}
+.st-split img{display:block;width:100%;height:auto;border-radius:16px}
+.st-list{margin:0;padding-left:1.3em;line-height:1.9}
+.st-hr{border:0;border-top:2px dashed rgba(0,0,0,.15);margin:28px auto;max-width:960px}
+.st-foot{text-align:center;font-size:.875rem;opacity:.7;padding:24px 12px}
+.st-tab-bar{display:flex;gap:4px;flex-wrap:wrap;border-bottom:2px solid rgba(0,0,0,.08);margin-bottom:14px}
+.st-tab{border:0;background:none;padding:10px 14px;font:inherit;font-weight:700;color:inherit;opacity:.6;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px}
+.st-tab.is-on{opacity:1;color:var(--st-accent);border-bottom-color:var(--st-accent)}
+.st-acc{border:1px solid rgba(0,0,0,.1);border-radius:12px;margin:8px 0;background:#fff;overflow:hidden;text-align:left}
+.st-acc summary{cursor:pointer;padding:14px 44px 14px 16px;font-weight:700;list-style:none;position:relative}
+.st-acc summary::-webkit-details-marker{display:none}
+.st-acc summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.3em;color:var(--st-accent)}
+.st-acc[open] summary::after{content:"\2212"}
+.st-acc>.st-p{padding:0 16px 14px;margin:0}
+.st-pop{margin:12px 0;text-align:center}
+.st-modal{border:0;border-radius:18px;padding:24px;width:min(480px,90vw);box-shadow:0 20px 60px rgba(0,0,0,.3);text-align:left;color:#222}
+.st-modal::backdrop{background:rgba(0,0,0,.45)}
+.st-slider{position:relative}
+.st-slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:16px}
+.st-slides::-webkit-scrollbar{display:none}
+.st-slide{flex:0 0 100%;scroll-snap-align:start;margin:0}
+.st-slide img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:16px}
+.st-slide figcaption{text-align:center;padding:8px;font-size:.95rem}
+.st-prev,.st-next{position:absolute;top:calc(50% - 40px);width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(0,0,0,.2);font-size:24px;line-height:1;cursor:pointer;color:#333}
+.st-prev{left:10px}.st-next{right:10px}
+.st-dots{display:flex;justify-content:center;gap:8px;margin-top:4px}
+.st-dots button{width:10px;height:10px;border-radius:50%;border:0;background:rgba(0,0,0,.2);padding:0;cursor:pointer}
+.st-dots button.is-on{background:var(--st-accent)}
+.st-quiz{text-align:center}
+.st-q{font-size:1.25rem;font-weight:800;margin:0 0 14px}
+.st-opts{display:grid;gap:8px;max-width:420px;margin:0 auto}
+.st-opt{padding:12px 16px;border-radius:12px;border:2px solid rgba(0,0,0,.12);background:#fff;font:inherit;font-weight:700;cursor:pointer;color:#222}
+.st-opt.is-ok{border-color:#2f9e5b;background:#e9f7ef}.st-opt.is-no{border-color:#d9475a;background:#fdecee}
+.st-qr{min-height:1.6em;font-weight:700;margin:12px 0 0}
+.st-ci{display:flex;gap:10px;align-items:center;padding:10px 12px;border:1px solid rgba(0,0,0,.08);border-radius:10px;margin:6px 0;background:#fff;cursor:pointer;text-align:left;color:#222}
+.st-ci input{width:20px;height:20px;flex:none;accent-color:var(--st-accent)}
+.st-bar{height:10px;border-radius:99px;background:rgba(0,0,0,.08);overflow:hidden;margin-top:12px}
+.st-bar i{display:block;height:100%;width:0;background:var(--st-accent);transition:width .3s}
+.st-cnt{font-size:.9rem;opacity:.75;margin:6px 0 0}
+.st-dday,.st-timer{text-align:center;border-radius:20px;background:#f6f6f6;background:color-mix(in srgb,var(--st-accent) 10%,#fff)}
+.st-dlabel,.st-tlabel{margin:0;font-weight:700;opacity:.8}
+.st-dnum,.st-tnum{margin:4px 0 8px;font-size:3rem;font-weight:900;color:var(--st-accent);font-variant-numeric:tabular-nums;line-height:1.2}
+.st-tnum.is-done{animation:stblink 1s 3}@keyframes stblink{50%{opacity:.2}}
+.st-embed iframe{display:block;width:100%;aspect-ratio:16/9;height:auto;border:0;border-radius:14px}
+.st-embed[data-kind=map] iframe{aspect-ratio:4/3}
+.st-cols{display:grid;gap:16px}
+.st-c2{grid-template-columns:repeat(2,minmax(0,1fr))}.st-c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:600px){.st-c2,.st-c3{grid-template-columns:1fr}}
+.st-col{min-width:0}
+.st-swipe{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 4px 14px;-webkit-overflow-scrolling:touch}
+.st-swipe>*{flex:0 0 min(72%,240px);box-sizing:border-box;scroll-snap-align:start}
+.st-nav-i{margin-right:5px}
+@media(max-width:600px){.st-nav-tab{position:fixed;top:auto;bottom:0;left:0;border-bottom:0;border-top:1px solid rgba(0,0,0,.1);padding-bottom:env(safe-area-inset-bottom)}.st-nav-tab .st-nav-in{flex-wrap:nowrap;justify-content:space-around;gap:0;padding:4px}.st-nav-tab .st-nav-a{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;font-size:12px;border-radius:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.st-nav-tab .st-nav-a.is-on{background:none;color:var(--st-accent)}.st-nav-tab .st-nav-i{margin:0;font-size:22px;line-height:1.1}}
+.st-g-point{--st-g:linear-gradient(135deg,rgba(255,255,255,0),rgba(255,255,255,.45)),linear-gradient(var(--st-accent),var(--st-accent));--st-gi:#fff}.st-g-sunset{--st-g:linear-gradient(135deg,#f43f5e,#f97316);--st-gi:#fff}.st-g-ocean{--st-g:linear-gradient(135deg,#2563eb,#06b6d4);--st-gi:#fff}.st-g-grape{--st-g:linear-gradient(135deg,#7c3aed,#ec4899);--st-gi:#fff}.st-g-forest{--st-g:linear-gradient(135deg,#047857,#34d399);--st-gi:#fff}.st-g-night{--st-g:linear-gradient(135deg,#0f172a,#475569);--st-gi:#fff}.st-g-peach{--st-g:linear-gradient(135deg,#ffe4e6,#fef3c7);--st-gi:#222}.st-g-mint{--st-g:linear-gradient(135deg,#d1fae5,#dbeafe);--st-gi:#222}.st-g-lav{--st-g:linear-gradient(135deg,#ede9fe,#fce7f3);--st-gi:#222}
+html body [class*="st-g-"]{background-image:var(--st-g);color:var(--st-gi)}
+html body .st-gtx{color:transparent;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.st-hv-lift,.st-hv-grow,.st-hv-glow,.st-hv-press{transition:translate .2s,scale .2s,box-shadow .2s}
+@media(hover:hover){.st-hv-lift:hover{translate:0 -6px;box-shadow:0 14px 28px rgba(0,0,0,.18)}.st-hv-grow:hover{scale:1.04}.st-hv-glow:hover{box-shadow:0 8px 24px rgba(0,0,0,.25);box-shadow:0 0 0 3px color-mix(in srgb,var(--st-accent) 35%,transparent),0 8px 24px color-mix(in srgb,var(--st-accent) 45%,transparent)}}
+.st-hv-press:active{scale:.95}
+html.st-js [data-st-in]{opacity:0;transition:opacity .6s ease,transform .6s ease,translate .2s,scale .2s,box-shadow .2s}
+html.st-js [data-st-in="up"]{transform:translateY(26px)}html.st-js [data-st-in="zoom"]{transform:scale(.9)}html.st-js [data-st-in="left"]{transform:translateX(-30px)}
+html.st-js [data-st-in].is-in{opacity:1;transform:none}
+html.st-editing [data-st-in]{opacity:1!important;transform:none!important}
+.st-editing .st-swipe{flex-wrap:wrap;overflow:visible}
+html.st-dark{filter:invert(1) hue-rotate(180deg);background:#fff}
+html.st-dark img,html.st-dark video,html.st-dark iframe,html.st-dark canvas{filter:invert(1) hue-rotate(180deg)}
+.st-editing .st-tab-panel{display:block!important;outline:2px dashed rgba(0,0,0,.18);outline-offset:4px;margin:12px 0}
+.st-editing .st-slides{flex-wrap:wrap;gap:10px;overflow:visible}
+.st-editing .st-prev,.st-editing .st-next{display:none}
+.st-editing dialog.st-modal{display:block;position:static;margin:12px auto;outline:2px dashed rgba(0,0,0,.25)}
+.st-editing .st-embed iframe{pointer-events:none}
+</style></head>
 <body class="relative flex flex-col items-center justify-between min-h-screen p-4 md:p-8">
 
   <!-- 배경 빛 & 물방울 컨테이너 -->
@@ -182,6 +274,7 @@
       <p class="text-lg md:text-2xl text-cyan-100 max-w-lg mx-auto font-medium">
         푸른 바닷속을 여유롭게 헤엄치는 집순이 혜린의 공간에 오신 것을 환영해요! 🫧
       </p>
+      <a class="st-btn st-g-ocean" href="about.html">다음 창</a>
     </header>
 
     <!-- 좋아하는 것 3가지 (카드 뒤집기) Section -->
@@ -280,257 +373,9 @@
     </section>
 
     <!-- 10초 광클 미니게임 Section -->
-    <section class="w-full bg-gradient-to-r from-teal-900/60 to-emerald-900/60 backdrop-blur-md border border-emerald-400/30 rounded-3xl p-6 md:p-8 shadow-2xl text-center space-y-6">
-      <div>
-        <span class="text-emerald-300 text-sm font-bold bg-emerald-500/20 px-3 py-1 rounded-full">🎮 바닷속 순발력 미니게임</span>
-        <h3 class="text-2xl md:text-3xl font-bold text-white mt-2">10초 동안 바다 버튼 광클하기!</h3>
-        <p class="text-emerald-100 text-xs md:text-sm mt-1">10초 동안 버튼을 얼마나 많이 누를 수 있을까요?</p>
-      </div>
-
-      <div class="flex flex-col items-center justify-center gap-4">
-        <div class="flex justify-center items-center gap-8 bg-black/30 px-6 py-3 rounded-2xl border border-emerald-400/20 w-full max-w-xs">
-          <div>
-            <div class="text-xs text-emerald-300">남은 시간</div>
-            <div id="game-timer" class="text-2xl font-extrabold text-yellow-300">10.0초</div>
-          </div>
-          <div class="h-8 w-px bg-emerald-400/30"></div>
-          <div>
-            <div class="text-xs text-emerald-300">클릭 수</div>
-            <div id="game-score" class="text-2xl font-extrabold text-cyan-300">0 회</div>
-          </div>
-        </div>
-
-        <button id="click-btn" onclick="handleGameClick()" class="w-full max-w-sm py-6 bg-gradient-to-r from-teal-400 via-emerald-500 to-green-600 hover:from-teal-300 hover:to-green-500 text-white font-extrabold text-2xl md:text-3xl rounded-2xl shadow-lg shadow-teal-500/30 transform active:scale-95 transition-all border-4 border-emerald-200 flex items-center justify-center gap-2">
-          <span>🐚</span> <span id="click-btn-text">게임 시작하기!</span>
-        </button>
-
-        <div id="game-result" class="hidden w-full max-w-sm p-4 bg-emerald-950/80 border border-emerald-400/40 rounded-2xl text-emerald-100 font-bold text-base md:text-lg"></div>
-      </div>
-    </section>
-
-    <!-- 랜덤 응원 한마디 Section -->
-    <section class="w-full bg-gradient-to-r from-blue-900/60 to-indigo-900/60 backdrop-blur-md border border-indigo-400/30 rounded-3xl p-6 md:p-8 shadow-2xl text-center space-y-6">
-      <div>
-        <span class="text-yellow-300 text-sm font-bold bg-yellow-500/20 px-3 py-1 rounded-full">💌 혜린이의 바닷속 우체통</span>
-        <h3 class="text-2xl md:text-3xl font-bold text-white mt-2">오늘 당신에게 보내는 랜덤 응원 한마디</h3>
-      </div>
-
-      <!-- 응원 메시지 상자 -->
-      <div id="cheer-box" class="min-h-[100px] bg-sky-950/60 border border-cyan-500/30 rounded-2xl p-6 flex items-center justify-center text-lg md:text-xl text-cyan-100 font-medium shadow-inner">
-        아래 버튼을 눌러 따뜻한 바닷속 응원 메시지를 받아보세요! ✨
-      </div>
-
-      <button onclick="getCheerMessage()" class="px-8 py-4 bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 hover:from-cyan-300 hover:to-blue-500 text-white font-extrabold text-lg md:text-xl rounded-2xl shadow-lg shadow-cyan-500/30 transform active:scale-95 hover:scale-105 transition-all border-2 border-cyan-200/50 flex items-center justify-center gap-2 mx-auto">
-        <span>💖</span> 응원 메시지 뽑기!
-      </button>
-    </section>
-
-  </main>
-
-  <!-- 푸터 -->
-  <footer class="relative z-10 text-center text-cyan-300/70 text-xs md:text-sm my-8">
-    <p>© 혜린 (Hyerin). All rights reserved.</p>
-    <p class="mt-1">집을 사랑하는 혜린이의 신비로운 바닷속 공간 🌊🐱🏠</p>
-  </footer>
-
-  <!-- JavaScript 스크립트 -->
-  <script>
-    // 1. 물방울 생성 로직
-    function createBubbles() {
-      const container = document.getElementById('bubbles-container');
-      const bubbleCount = 20;
-
-      for (let i = 0; i < bubbleCount; i++) {
-        const bubble = document.createElement('div');
-        bubble.classList.add('bubble');
-        
-        const size = Math.random() * 40 + 10;
-        const left = Math.random() * 100;
-        const delay = Math.random() * 8;
-        const duration = Math.random() * 6 + 6;
-
-        bubble.style.width = `${size}px`;
-        bubble.style.height = `${size}px`;
-        bubble.style.left = `${left}%`;
-        bubble.style.animationDelay = `${delay}s`;
-        bubble.style.animationDuration = `${duration}s`;
-
-        container.appendChild(bubble);
-      }
-    }
-
-    // 2. 마우스 & 터치 따라다니는 반짝이 이펙트
-    function createSparkle(x, y) {
-      const sparkle = document.createElement('div');
-      sparkle.className = 'sparkle';
-      
-      const size = Math.random() * 12 + 6;
-      sparkle.style.width = `${size}px`;
-      sparkle.style.height = `${size}px`;
-      sparkle.style.left = `${x}px`;
-      sparkle.style.top = `${y}px`;
-
-      document.body.appendChild(sparkle);
-
-      setTimeout(() => {
-        sparkle.remove();
-      }, 800);
-    }
-
-    let lastSparkleTime = 0;
-    function handleMove(x, y) {
-      const now = Date.now();
-      if (now - lastSparkleTime > 40) { // 생성 주기 조절
-        createSparkle(x, y);
-        lastSparkleTime = now;
-      }
-    }
-
-    window.addEventListener('mousemove', (e) => handleMove(e.clientX, e.clientY));
-    window.addEventListener('touchmove', (e) => {
-      if (e.touches.length > 0) {
-        handleMove(e.touches[0].clientX, e.touches[0].clientY);
-      }
-    });
-
-    // 3. 카드 뒤집기 함수
-    function flipCard(cardElement) {
-      const cardInner = cardElement.querySelector('.card-inner');
-      cardInner.classList.toggle('flipped');
-    }
-
-    // 4. OX 퀴즈 검사 함수
-    function checkQuiz(answer) {
-      const resultBox = document.getElementById('quiz-result');
-      resultBox.classList.remove('hidden', 'bg-green-500/30', 'text-green-200', 'border-green-400', 'bg-red-500/30', 'text-red-200', 'border-red-400', 'shake');
-
-      if (answer === 'O') {
-        // 정답 효과
-        resultBox.classList.add('bg-green-500/30', 'text-green-200', 'border', 'border-green-400');
-        resultBox.innerHTML = `🎉 <strong>정답입니다!</strong> 역시 혜린이를 잘 아시네요! 집이 최고랍니다 🏠✨`;
-        
-        confetti({
-          particleCount: 120,
-          spread: 80,
-          origin: { y: 0.6 }
-        });
-      } else {
-        // 오답 효과
-        resultBox.classList.add('bg-red-500/30', 'text-red-200', 'border', 'border-red-400', 'shake');
-        resultBox.innerHTML = `😱 <strong>땡! 틀렸습니다!</strong> 혜린이는 자타공인 최고의 집순이에요! 다시 도전해 보세요 🐱`;
-      }
-    }
-
-    // 5. 10초 광클 미니게임 로직
-    let gameScore = 0;
-    let gameTimeLeft = 10.0;
-    let gameTimerId = null;
-    let isGaming = false;
-
-    function handleGameClick() {
-      const scoreDisplay = document.getElementById('game-score');
-      const btnText = document.getElementById('click-btn-text');
-      const resultBox = document.getElementById('game-result');
-
-      if (!isGaming && gameTimeLeft === 10.0) {
-        // 게임 시작
-        isGaming = true;
-        gameScore = 1;
-        scoreDisplay.innerText = `${gameScore} 회`;
-        btnText.innerText = '광클하세요!!! 🐚';
-        resultBox.classList.add('hidden');
-
-        gameTimerId = setInterval(() => {
-          gameTimeLeft -= 0.1;
-          if (gameTimeLeft <= 0) {
-            gameTimeLeft = 0;
-            finishGame();
-          }
-          document.getElementById('game-timer').innerText = `${gameTimeLeft.toFixed(1)}초`;
-        }, 100);
-
-      } else if (isGaming) {
-        // 게임 진행 중 클릭
-        gameScore++;
-        scoreDisplay.innerText = `${gameScore} 회`;
-
-        // 터치/클릭 시 축하 효과
-        if (gameScore % 10 === 0) {
-          confetti({ particleCount: 20, spread: 50, origin: { y: 0.7 } });
-        }
-      } else {
-        // 게임 종료 후 재시작 준비
-        gameTimeLeft = 10.0;
-        gameScore = 0;
-        document.getElementById('game-timer').innerText = '10.0초';
-        scoreDisplay.innerText = '0 회';
-        btnText.innerText = '다시 시작하기!';
-        resultBox.classList.add('hidden');
-      }
-    }
-
-    function finishGame() {
-      clearInterval(gameTimerId);
-      isGaming = false;
-
-      const btnText = document.getElementById('click-btn-text');
-      const resultBox = document.getElementById('game-result');
-      btnText.innerText = '다시 하기! 🔄';
-
-      let grade = '';
-      if (gameScore >= 70) grade = '👑 전설의 신속 물고기! 손가락이 바다의 수호자급!';
-      else if (gameScore >= 50) grade = '🐬 쌩쌩 달리는 돌고래급 광클 속도!';
-      else if (gameScore >= 30) grade = '🐠 유유히 헤엄치는 귀여운 열대어 수준!';
-      else grade = '🐚 여유로운 아기 조개 수준! 손가락 풀고 다시 도전해 볼까요?';
-
-      resultBox.innerHTML = `게임 끝! 🎉<br>총 <span class="text-yellow-300 text-xl font-black">${gameScore}회</span> 클릭하셨습니다!<br><span class="text-cyan-200 mt-1 inline-block">${grade}</span>`;
-      resultBox.classList.remove('hidden');
-
-      confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 }
-      });
-    }
-
-    // 6. 랜덤 응원 한마디 목록 (12개)
-    const cheerMessages = [
-      "🌊 오늘 당신의 하루는 포근한 바다 물결처럼 평화롭고 완벽할 거예요!",
-      "🐱 고양이처럼 매력 넘치고 귀여운 일들이 오늘 가득할 예정입니다!",
-      "🏠 오늘 하루 수고 많았어요! 따뜻한 집에서 제일 맛있는 걸 먹으며 푹 쉬세요!",
-      "🐠 헤엄치는 물고기처럼 자유롭고 걸림돌 없는 하루가 될 거예요!",
-      "✨ 혜린이가 전하는 기운을 받아 오늘 당신이 하는 모든 일이 다 잘 풀립니다!",
-      "💖 당신은 존재 자체만으로도 누군가에게 큰 행복이자 축복이에요!",
-      "🐚 조개 속에 숨겨진 펄처럼 오늘 소소하지만 단단한 기쁨을 찾아보세요!",
-      "🐬 웃을 일이 지느러미처럼 살랑살랑 끊임없이 밀려오는 하루가 됩니다!",
-      "🍀 지치고 힘들 땐 잠깐 쉬어가도 괜찮아요. 항상 당신을 응원해요!",
-      "🌈 바닷속 무지개빛처럼 알록달록 재미있고 근사한 순간이 찾아옵니다!",
-      "🛋️ 세상에서 가장 편안한 휴식이 오늘 밤 당신을 기다리고 있어요!",
-      "☕ 맛있는 음료 한 잔과 함께 오늘도 무사히 승리하는 멋진 하루 보내세요!"
-    ];
-
-    // 7. 응원 메시지 뽑기 함수
-    function getCheerMessage() {
-      const cheerBox = document.getElementById('cheer-box');
-      cheerBox.style.opacity = '0.3';
-      
-      setTimeout(() => {
-        const randomIndex = Math.floor(Math.random() * cheerMessages.length);
-        cheerBox.innerText = cheerMessages[randomIndex];
-        cheerBox.style.opacity = '1';
-      }, 200);
-    }
-
-    // 초기화
-    window.onload = function() {
-      createBubbles();
-    };
-  </script>
-<!-- ▼ 방명록·OX 투표 (4차시) ▼ -->
-<sb-widget id="sb-web" style="display:block;width:100%;max-width:640px;margin:32px auto;flex:1 1 100%;grid-column:1/-1;align-self:stretch;box-sizing:border-box"></sb-widget>
-<script>
+    <!-- ▼ 방명록·OX 투표 (4차시) ▼ --><sb-widget id="sb-web" style="display:block;width:100%;max-width:640px;margin:32px auto;flex:1 1 100%;grid-column:1/-1;align-self:stretch;box-sizing:border-box"></sb-widget><script>
 (function () {
-  var C = {"id":"sb-web","url":"https://script.google.com/macros/s/AKfycbws8wVifm4uImDj9MLPro7H10hJgbDBaeD5nZF1bx_gvnit1Ez0FRHPgUyqhA-y2fVITA/exec","q":"나는 집이 좋다","title":"방명록","sel":"body > main:nth-child(2) > section:nth-child(4)","pos":"before"};
+  var C = {"id":"sb-web","url":"https://script.google.com/macros/s/AKfycbws8wVifm4uImDj9MLPro7H10hJgbDBaeD5nZF1bx_gvnit1Ez0FRHPgUyqhA-y2fVITA/exec","q":"나는 집이 좋다","title":"방명록","sel":"","pos":"before"};
   var host = document.getElementById(C.id);
   if (!host || host.sbReady) return;
   host.sbReady = true;
@@ -848,7 +693,250 @@
   }
 })();
 
-</script>
-<!-- ▲ 방명록·OX 투표 끝 ▲ -->
-</body>
-</html>
+</script><!-- ▲ 방명록·OX 투표 끝 ▲ --><section class="w-full bg-gradient-to-r from-teal-900/60 to-emerald-900/60 backdrop-blur-md border border-emerald-400/30 rounded-3xl p-6 md:p-8 shadow-2xl text-center space-y-6">
+      <div>
+        <span class="text-emerald-300 text-sm font-bold bg-emerald-500/20 px-3 py-1 rounded-full">🎮 바닷속 순발력 미니게임</span>
+        <h3 class="text-2xl md:text-3xl font-bold text-white mt-2">10초 동안 바다 버튼 광클하기!</h3>
+        <p class="text-emerald-100 text-xs md:text-sm mt-1">10초 동안 버튼을 얼마나 많이 누를 수 있을까요?</p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center gap-4">
+        <div class="flex justify-center items-center gap-8 bg-black/30 px-6 py-3 rounded-2xl border border-emerald-400/20 w-full max-w-xs">
+          <div>
+            <div class="text-xs text-emerald-300">남은 시간</div>
+            <div id="game-timer" class="text-2xl font-extrabold text-yellow-300">10.0초</div>
+          </div>
+          <div class="h-8 w-px bg-emerald-400/30"></div>
+          <div>
+            <div class="text-xs text-emerald-300">클릭 수</div>
+            <div id="game-score" class="text-2xl font-extrabold text-cyan-300">0 회</div>
+          </div>
+        </div>
+
+        <button id="click-btn" onclick="handleGameClick()" class="w-full max-w-sm py-6 bg-gradient-to-r from-teal-400 via-emerald-500 to-green-600 hover:from-teal-300 hover:to-green-500 text-white font-extrabold text-2xl md:text-3xl rounded-2xl shadow-lg shadow-teal-500/30 transform active:scale-95 transition-all border-4 border-emerald-200 flex items-center justify-center gap-2">
+          <span>🐚</span> <span id="click-btn-text">게임 시작하기!</span>
+        </button>
+
+        <div id="game-result" class="hidden w-full max-w-sm p-4 bg-emerald-950/80 border border-emerald-400/40 rounded-2xl text-emerald-100 font-bold text-base md:text-lg"></div>
+      </div>
+    </section>
+
+    <!-- 랜덤 응원 한마디 Section -->
+    <section class="w-full bg-gradient-to-r from-blue-900/60 to-indigo-900/60 backdrop-blur-md border border-indigo-400/30 rounded-3xl p-6 md:p-8 shadow-2xl text-center space-y-6">
+      <div>
+        <span class="text-yellow-300 text-sm font-bold bg-yellow-500/20 px-3 py-1 rounded-full">💌 혜린이의 바닷속 우체통</span>
+        <h3 class="text-2xl md:text-3xl font-bold text-white mt-2">오늘 당신에게 보내는 랜덤 응원 한마디</h3>
+      </div>
+
+      <!-- 응원 메시지 상자 -->
+      <div id="cheer-box" class="min-h-[100px] bg-sky-950/60 border border-cyan-500/30 rounded-2xl p-6 flex items-center justify-center text-lg md:text-xl text-cyan-100 font-medium shadow-inner">
+        아래 버튼을 눌러 따뜻한 바닷속 응원 메시지를 받아보세요! ✨
+      </div>
+
+      <button onclick="getCheerMessage()" class="px-8 py-4 bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 hover:from-cyan-300 hover:to-blue-500 text-white font-extrabold text-lg md:text-xl rounded-2xl shadow-lg shadow-cyan-500/30 transform active:scale-95 hover:scale-105 transition-all border-2 border-cyan-200/50 flex items-center justify-center gap-2 mx-auto">
+        <span>💖</span> 응원 메시지 뽑기!
+      </button>
+    </section>
+
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="relative z-10 text-center text-cyan-300/70 text-xs md:text-sm my-8">
+    <p>© 혜린 (Hyerin). All rights reserved.</p>
+    <p class="mt-1">집을 사랑하는 혜린이의 신비로운 바닷속 공간 🌊🐱🏠</p>
+  </footer>
+
+  <!-- JavaScript 스크립트 -->
+  <script>
+    // 1. 물방울 생성 로직
+    function createBubbles() {
+      const container = document.getElementById('bubbles-container');
+      const bubbleCount = 20;
+
+      for (let i = 0; i < bubbleCount; i++) {
+        const bubble = document.createElement('div');
+        bubble.classList.add('bubble');
+        
+        const size = Math.random() * 40 + 10;
+        const left = Math.random() * 100;
+        const delay = Math.random() * 8;
+        const duration = Math.random() * 6 + 6;
+
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+        bubble.style.left = `${left}%`;
+        bubble.style.animationDelay = `${delay}s`;
+        bubble.style.animationDuration = `${duration}s`;
+
+        container.appendChild(bubble);
+      }
+    }
+
+    // 2. 마우스 & 터치 따라다니는 반짝이 이펙트
+    function createSparkle(x, y) {
+      const sparkle = document.createElement('div');
+      sparkle.className = 'sparkle';
+      
+      const size = Math.random() * 12 + 6;
+      sparkle.style.width = `${size}px`;
+      sparkle.style.height = `${size}px`;
+      sparkle.style.left = `${x}px`;
+      sparkle.style.top = `${y}px`;
+
+      document.body.appendChild(sparkle);
+
+      setTimeout(() => {
+        sparkle.remove();
+      }, 800);
+    }
+
+    let lastSparkleTime = 0;
+    function handleMove(x, y) {
+      const now = Date.now();
+      if (now - lastSparkleTime > 40) { // 생성 주기 조절
+        createSparkle(x, y);
+        lastSparkleTime = now;
+      }
+    }
+
+    window.addEventListener('mousemove', (e) => handleMove(e.clientX, e.clientY));
+    window.addEventListener('touchmove', (e) => {
+      if (e.touches.length > 0) {
+        handleMove(e.touches[0].clientX, e.touches[0].clientY);
+      }
+    });
+
+    // 3. 카드 뒤집기 함수
+    function flipCard(cardElement) {
+      const cardInner = cardElement.querySelector('.card-inner');
+      cardInner.classList.toggle('flipped');
+    }
+
+    // 4. OX 퀴즈 검사 함수
+    function checkQuiz(answer) {
+      const resultBox = document.getElementById('quiz-result');
+      resultBox.classList.remove('hidden', 'bg-green-500/30', 'text-green-200', 'border-green-400', 'bg-red-500/30', 'text-red-200', 'border-red-400', 'shake');
+
+      if (answer === 'O') {
+        // 정답 효과
+        resultBox.classList.add('bg-green-500/30', 'text-green-200', 'border', 'border-green-400');
+        resultBox.innerHTML = `🎉 <strong>정답입니다!</strong> 역시 혜린이를 잘 아시네요! 집이 최고랍니다 🏠✨`;
+        
+        confetti({
+          particleCount: 120,
+          spread: 80,
+          origin: { y: 0.6 }
+        });
+      } else {
+        // 오답 효과
+        resultBox.classList.add('bg-red-500/30', 'text-red-200', 'border', 'border-red-400', 'shake');
+        resultBox.innerHTML = `😱 <strong>땡! 틀렸습니다!</strong> 혜린이는 자타공인 최고의 집순이에요! 다시 도전해 보세요 🐱`;
+      }
+    }
+
+    // 5. 10초 광클 미니게임 로직
+    let gameScore = 0;
+    let gameTimeLeft = 10.0;
+    let gameTimerId = null;
+    let isGaming = false;
+
+    function handleGameClick() {
+      const scoreDisplay = document.getElementById('game-score');
+      const btnText = document.getElementById('click-btn-text');
+      const resultBox = document.getElementById('game-result');
+
+      if (!isGaming && gameTimeLeft === 10.0) {
+        // 게임 시작
+        isGaming = true;
+        gameScore = 1;
+        scoreDisplay.innerText = `${gameScore} 회`;
+        btnText.innerText = '광클하세요!!! 🐚';
+        resultBox.classList.add('hidden');
+
+        gameTimerId = setInterval(() => {
+          gameTimeLeft -= 0.1;
+          if (gameTimeLeft <= 0) {
+            gameTimeLeft = 0;
+            finishGame();
+          }
+          document.getElementById('game-timer').innerText = `${gameTimeLeft.toFixed(1)}초`;
+        }, 100);
+
+      } else if (isGaming) {
+        // 게임 진행 중 클릭
+        gameScore++;
+        scoreDisplay.innerText = `${gameScore} 회`;
+
+        // 터치/클릭 시 축하 효과
+        if (gameScore % 10 === 0) {
+          confetti({ particleCount: 20, spread: 50, origin: { y: 0.7 } });
+        }
+      } else {
+        // 게임 종료 후 재시작 준비
+        gameTimeLeft = 10.0;
+        gameScore = 0;
+        document.getElementById('game-timer').innerText = '10.0초';
+        scoreDisplay.innerText = '0 회';
+        btnText.innerText = '다시 시작하기!';
+        resultBox.classList.add('hidden');
+      }
+    }
+
+    function finishGame() {
+      clearInterval(gameTimerId);
+      isGaming = false;
+
+      const btnText = document.getElementById('click-btn-text');
+      const resultBox = document.getElementById('game-result');
+      btnText.innerText = '다시 하기! 🔄';
+
+      let grade = '';
+      if (gameScore >= 70) grade = '👑 전설의 신속 물고기! 손가락이 바다의 수호자급!';
+      else if (gameScore >= 50) grade = '🐬 쌩쌩 달리는 돌고래급 광클 속도!';
+      else if (gameScore >= 30) grade = '🐠 유유히 헤엄치는 귀여운 열대어 수준!';
+      else grade = '🐚 여유로운 아기 조개 수준! 손가락 풀고 다시 도전해 볼까요?';
+
+      resultBox.innerHTML = `게임 끝! 🎉<br>총 <span class="text-yellow-300 text-xl font-black">${gameScore}회</span> 클릭하셨습니다!<br><span class="text-cyan-200 mt-1 inline-block">${grade}</span>`;
+      resultBox.classList.remove('hidden');
+
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    }
+
+    // 6. 랜덤 응원 한마디 목록 (12개)
+    const cheerMessages = [
+      "🌊 오늘 당신의 하루는 포근한 바다 물결처럼 평화롭고 완벽할 거예요!",
+      "🐱 고양이처럼 매력 넘치고 귀여운 일들이 오늘 가득할 예정입니다!",
+      "🏠 오늘 하루 수고 많았어요! 따뜻한 집에서 제일 맛있는 걸 먹으며 푹 쉬세요!",
+      "🐠 헤엄치는 물고기처럼 자유롭고 걸림돌 없는 하루가 될 거예요!",
+      "✨ 혜린이가 전하는 기운을 받아 오늘 당신이 하는 모든 일이 다 잘 풀립니다!",
+      "💖 당신은 존재 자체만으로도 누군가에게 큰 행복이자 축복이에요!",
+      "🐚 조개 속에 숨겨진 펄처럼 오늘 소소하지만 단단한 기쁨을 찾아보세요!",
+      "🐬 웃을 일이 지느러미처럼 살랑살랑 끊임없이 밀려오는 하루가 됩니다!",
+      "🍀 지치고 힘들 땐 잠깐 쉬어가도 괜찮아요. 항상 당신을 응원해요!",
+      "🌈 바닷속 무지개빛처럼 알록달록 재미있고 근사한 순간이 찾아옵니다!",
+      "🛋️ 세상에서 가장 편안한 휴식이 오늘 밤 당신을 기다리고 있어요!",
+      "☕ 맛있는 음료 한 잔과 함께 오늘도 무사히 승리하는 멋진 하루 보내세요!"
+    ];
+
+    // 7. 응원 메시지 뽑기 함수
+    function getCheerMessage() {
+      const cheerBox = document.getElementById('cheer-box');
+      cheerBox.style.opacity = '0.3';
+      
+      setTimeout(() => {
+        const randomIndex = Math.floor(Math.random() * cheerMessages.length);
+        cheerBox.innerText = cheerMessages[randomIndex];
+        cheerBox.style.opacity = '1';
+      }, 200);
+    }
+
+    // 초기화
+    window.onload = function() {
+      createBubbles();
+    };
+  </script>
+</body></html>
